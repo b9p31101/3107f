@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ja" >
+<!-- [注意！]このファイルを名前を付けて別名で保存したら，施設の番号を確認し，
+  <input type="hidden" id="obj_id" value="0">のvalueの値を変更すること -->
+<head>
+  <meta charset="UTF-8">
+  <title>湘南台駅紹介Webページ開発プロジェクト</title>
+  
+  <!-- CSSの設定（Bootstrap 4を利用する→部品の使い方は各自で調べること） -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+
+  <!-- CSSの設定（演習ではcssフォルダのProA_style.cssを編集してクラスを設定すること） -->
+	<link rel="stylesheet" type="text/css" href="../ProA_style.css">
+
+	<!-- lightbox -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.css" rel="stylesheet">
+
+	<!-- 評価を☆で表す（https://cortyuming.hateblo.jp/entry/2017/03/22/131457 から作成） -->
+	<link rel="stylesheet" href="css/star-rating.css">
+  
+</head>
+
+<body>
+	<!-- ページ上部に常時表示される部分にBootstrapのNavbarというコンポーネント（部品）を表示 -->
+  <header>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <a class="kan"><a href="front.html">フロントページ</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+              <a class="kan"><a href="dog1.html"> アクセス</a> <!-- hrefのリンク先は各自で修正すること -->
+        </li>
+        <li class="nav-item">
+          <a class="kan"><a href="dog2.html"> 駅の利用状況</a><!-- hrefのリンク先は各自で修正すること -->
+        </li>
+        <li class="nav-item">
+          <a class="kan"><a href="dog3.html"> 駅周辺の飲食店</a><!-- hrefのリンク先は各自で修正すること -->
+        </li>
+        <!-- ここに項目<li>～</li>を増やす -->
+    </ul>
+
+    <form class="form-inline mt-2 mt-md-0">
+      <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+       <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+    </div>
+  </nav>
+	</header>
+
+<main role="main" class="pt-5">
+	<input type="hidden" id="obj_id" value="0">
+	<!-- ページの見出し -->
+	<section class="jumbotron text-center my-5 mx-5" id="#bg-head">
+	 	<div class="container">
+  		<h1 class="jumbotron-heading">湘南台駅紹介Webページ開発プロジェクト</h1>
+			<p>湘南台駅について紹介します</p>
+		</div>
+  </section>
+
+    <div class="row m-3"><!-- 紹介対象の内容（ここから）-->
+      <div class="col-md-7">
+        <h2 class="pl-1 bg-lightblue">湘南台駅
+            <!-- <span class="text-muted">It'll blow your mind.</span> -->
+        </h2>
+        <p id="abstract" class="lead">湘南台駅（しょうなんだいえき）は、神奈川県藤沢市湘南台にある、小田急電鉄・相模鉄道・横浜市営地下鉄の駅。藤沢市北部の交通拠点となる駅である。また、慶應義塾大学湘南藤沢キャンパス(SFC)、文教大学湘南キャンパス、湘南ライフタウンへの玄関口でもあり、多数のバス路線が乗り入れている。</p>
+				<p id="detail"> 小田急江ノ島線、相鉄いずみ野線、横浜市営地下鉄ブルーラインともに、線内で最も新しい駅である。1990年代以降、当駅周辺は急速に発展し、現在藤沢市内の駅で2番目に利用者が多い駅となっている。
+
+当駅は、藤沢市の北部第一土地区画整理事業に伴い、1966年（昭和41年）11月7日に小田急江ノ島線の新駅として開業した。駅名は、展望のよい開けた台地にあり、新しい住宅地としてふさわしい名として「湘南台」となった。なお、駅開業当時の地名は円行であり、その後1984年（昭和59年）に当土地区画整理事業が完了したのに伴い、駅名に合わせ湘南台に町名変更された。
+
+北部第一土地区画整理事業は、1960年代にいすゞ自動車をはじめ多くの企業立地の需要に応えるため、また新たな住宅需要や通勤需要に応えるため、長後駅と六会駅（現・六会日大前）の中間に新駅を設置し、その新駅周辺に商業・業務地区を形成することで、藤沢市北部の新たな中心地を形成することを図る目的で始められた。
+
+1980年代になると、当駅周辺には藤沢北警察署、藤沢市秋葉台文化体育館、藤沢市総合市民図書館、湘南台文化センター等、公共施設が多く設置され、藤沢市北部の新たな中心地としての機能集積が図られた。1990年代になると、1991年（平成3年）の慶應義塾大学湘南藤沢キャンパスの開設、1999年（平成10年）の相鉄いずみ野線（同年3月）と横浜市営地下鉄（同年8月）の延伸に伴い、当駅周辺は急速に発展することとなった。2000年代になると、当駅の利用者が増加し乗換駅になったこともあり、小田急江ノ島線は2000年（平成12年）には急行、2002年（平成14年）には湘南急行（現在の快速急行に相当）の停車駅となった。また、2005年（平成15年）には当駅と慶応大学間を結ぶ「ツインライナー」（大型連接バス）が神奈川県内で初めて運行された。現在、当駅周辺は藤沢市北部の中心地として活況を呈している。</p>
+      </div>
+      <div class="col-md-5">
+        <img id="thumnail_img" class="img-fluid mx-auto box-shadow" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Shonandai-Sta-W.JPG/320px-Shonandai-Sta-W.JPG" alt="画像の代替テキスト">
+      </div>
+    <!-- 紹介対象の内容（ここまで）-->
+    
+  </main>
+
+  <!-- フッターの表示 -->
+  <footer>
+   (C) All Right Reserved, 2015-2019, Infosys Project A 
+  </footer>
+	
+  <!-- JavaScriptのライブラリ（jQueryは基本ライブラリ+Bootstrap用のJavaScriptファイル） -->
+	<script
+  	src="https://code.jquery.com/jquery-3.4.1.min.js"
+  	integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  	crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+	<!-- lightbox2を表示するためのJavaScriptファイル -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" type="text/javascript">
+	</script>
+
+  <!-- 地図の表示(JavaScript) --><!-- leaflet.js+OpenStreet MapによるMapの表示 -->
+	<!-- headタグ内でCSSとLeafletを読み込む -->
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+	<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+   crossorigin=""></script>
+
+	<!-- 詳細情報のデータをDBからJSONから読み取り -->
+	<script src="js/readJSON.js"></script>
+
+</body>
+
+</html>
