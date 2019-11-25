@@ -1,4 +1,4 @@
-$(function(){
+﻿$(function(){
 	$("#main_content").ready(function(){
 
 		//呼び出された際のURLパラメータの解析（.../detail1.html?id=1などのとき，変数名idの値(1)を取り出す）※テンプレートの時点では使っていない
@@ -12,7 +12,7 @@ $(function(){
 			}
 		}
 
-		var url = "https://www.shonan.bunkyo.ac.jp/~学籍番号/各グループのリポジトリ名/data.json";
+		var url = "https://www.shonan.bunkyo.ac.jp/~b9p31059/proa2019-project1-3107_f/data.json";
 
 		var id = 0; //URLに?id=番号を付けて読み込む
 		id = $.urlParam('id'); //?id=Nで指定されたとき
