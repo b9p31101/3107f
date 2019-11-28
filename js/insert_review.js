@@ -1,4 +1,4 @@
-$(function(){
+﻿$(function(){
 	$("#main_content").ready(function(){
 
 		//呼び出された際のURLパラメータの解析（.../detail.html?id=1などのとき，変数名idの値(1)を取り出す）
@@ -12,7 +12,7 @@ $(function(){
 			}
 		}
 
-		var url = "http://www.shonan.bunkyo.ac.jp/~学籍番号/フォルダ/review_json.php?";
+		var url = "http://www.shonan.bunkyo.ac.jp/~b9p31059/3107f-master/review_json.php?";
 
 		var id = $.urlParam('id'); //?id=で指定された紹介対象について
 		if(id != 0){

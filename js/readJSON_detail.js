@@ -12,7 +12,7 @@
 			}
 		}
 
-		var url = "https://www.shonan.bunkyo.ac.jp/~b9p31059/proa2019-project1-3107_f/data.json";
+		var url = "http://www.shonan.bunkyo.ac.jp/~b9p31059/3107f-master/data.json";
 
 		var id = 0; //URLに?id=番号を付けて読み込む
 		id = $.urlParam('id'); //?id=Nで指定されたとき

@@ -1,4 +1,4 @@
-$(function(){
+﻿$(function(){
 	$("#main_content").ready(function(){ //<div id="main_content">~</div>の読み込みが完了したら
 
 		//呼び出された際のURLパラメータの解析（.../detail1.html?id=1などのとき，変数名idの値(1)を取り出す）※テンプレートの時点では使っていない

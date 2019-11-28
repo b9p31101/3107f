@@ -1,4 +1,4 @@
-$(function(){
+﻿$(function(){
 	$("main").ready(function(){
 
 		//呼び出された際のURLパラメータの解析（.../list.html?id=1などのとき，変数名idの値(1)を取り出す）
@@ -12,7 +12,7 @@ $(function(){
 			}
 		}
 
-		var url = "http://www.shonan.bunkyo.ac.jp/~学籍番号/各グループのリポジトリ名/data.json";
+		var url = "http://www.shonan.bunkyo.ac.jp/~b9p31059/3107f-master/data.json";
 
 		var q = decodeURIComponent($.urlParam('q')); //?q=検索語で指定されたとき
 		var category = decodeURIComponent$.urlParam('category')); //?category=カテゴリ名で指定されたとき
