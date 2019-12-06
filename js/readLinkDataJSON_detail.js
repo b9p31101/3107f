@@ -17,8 +17,8 @@
 
 		//LinkData.orgからJSON(P)を取得するURLは，各データセットの”その他の形式のAPIリストを表示”から
 		//”その他のAPI”→RDF/JSONのURLをコピー＆貼り付けし，?callback=?を加える
-		//　例：var url = "http://linkdata.org/api/1/rdf1s2833i/fujisawa_shogakkou_rdf.json?callback=?";
-		var url = "http://linkdata.org/api/から始まるRDF/JSON形式のURL?callback=?";//←各チームの企画によって変更！
+		//　例：var url = "http://linkdata.org/http://linkdata.org/api/1/rdf1s8153i/shonandai_rdf.json?callback=?";
+		var url = "http://linkdata.org/api/1/rdf1s8153i/shonandai_rdf.json?callback=?";//←各チームの企画によって変更！
 		var resource_uri = "http://linkdata.org/resource/rdf1s2833i"; //データIDにあたるURLの部分をここに書く
 		var label_uri ="http://www.w3.org/2000/01/rdf-schema#label"; //ラベルとなっている項目のURI(変更の必要なし）
 		var addr_uri ="http://purl.org/jrrk#address"; //住所の項目を取り出すためのURI
