@@ -35,3 +35,29 @@ main {
 	height: 300px;
 }
 
+
+
+
+/*駅の利用状況　表*/
+table,th,td {border: solid 1px black;
+			border-collapse: collapse;
+			margin-right: auto;
+			margin-left: auto;
+			background-color: white;
+}
+
+th {background-color: lightblue;}
+
+div.tab table{border-collapse: collapse;
+}table,th,td {border: solid 1px black;
+			border-collapse: collapse;
+			margin-right: auto;
+			margin-left: auto;
+			background-color: white;
+}
+
+th {background-color: lightblue;}
+
+div.tab table{border-collapse: collapse;
+}
+/*ここまで*/
